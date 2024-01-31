@@ -1,0 +1,16 @@
+<nav class="navigator">
+    <ul class="nav-list">
+        <li class="nav-item"><a href="/">Home</a></li>
+        <% if(isAuth) { %>}
+        <li class="nav-item"><a href="/create-post">Home</a></li>
+        <% } %>
+    </ul>
+    <ul class="nav-list">
+        <% if(isAuth) { %>
+        <li class="nav-item"><a href="/logout">Logout</a></li>
+        <% } else {} %>
+        <li class="nav-item"><a href="/login">Login</a></li>
+        <li class="nav-item"><a href="/signup">Signup</a></li>
+        <% } %>
+    </ul>
+</nav>

@@ -1,0 +1,24 @@
+<%- include('./includes/header.ejs') %>
+<%- include('./includes/navbar.ejs') %>
+
+<section class="main-container">
+    <div class="contain-fluid">
+        <div class="row">
+            <div class="col-lg-10">
+                <h2>Sign in</h2>
+                <form action="/login" method="POST" class="login-form">
+                    <label for="Email">Email</label>
+                    <input type="text" id="email" name="email" required />
+                    <label for="password">password</label>
+                    <input type="password" id="password" name="password" required />
+                    <input type="hidden" name="author" value="<%= id %>" required />
+                    <input type="hidden" name="_csrf" value="<%= csrfToken %>" required />
+                    <button type="submit" class="submit-button">Login</button>
+                </form>
+                <% if(error !== '') { %>
+                    <p><%- error %></p>
+               <% } %>
+            </div>
+        </div>
+    </div>
+</section>
