@@ -8,7 +8,7 @@
 
 - `npm i bcryptjs body-parser cookie-parser csurf dotenv ejs express jsonwebtoken mongoose nodemon validator`
 
-| Lib | shuoming |
+| Lib |explanation |
 |---|---|
 |nodemon|helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected |
 |bcryptjs|protect against rainbow table attacks, bcrypt is an adaptive function|
